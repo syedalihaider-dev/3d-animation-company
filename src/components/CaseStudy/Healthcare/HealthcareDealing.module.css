@@ -1,0 +1,58 @@
+.dealingSection {
+  position: relative;
+  padding: 80px 0;
+  background: radial-gradient(63.46% 96.32% at 50% 50%, #FFFFFF 0%, #ffcefc 100%);
+  color: #19042D;
+}
+
+.mainHeading {
+  font-weight: var(--font-400);
+  font-size: 65px;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #19042D 0%, #860776 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.para {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--accent-color);
+  font-weight: var(--font-400);
+  margin: 0;
+}
+
+.imageContainer {
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.imageContainer:hover {
+  transform: translateY(-10px);
+}
+
+.dealingImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .mainHeading { font-size: 56px; }
+}
+
+@media (max-width: 991px) {
+  .mainHeading { font-size: 48px; }
+  .para { font-size: 18px; }
+  .dealingSection { padding: 80px 0; }
+}
+
+@media (max-width: 768px) {
+  .mainHeading { font-size: 36px; }
+  .para { font-size: 16px; }
+  .dealingSection { padding: 60px 0; }
+}

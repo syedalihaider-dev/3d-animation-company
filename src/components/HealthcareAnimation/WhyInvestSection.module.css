@@ -1,0 +1,221 @@
+.workflowSection {
+  background: radial-gradient(100% 100% at 30% 20%, #c53add -50%, #19042d 80%);
+  padding: 80px 0;
+  overflow: hidden;
+  position: relative;
+  color: var(--light-color);
+  z-index: 1;
+}
+
+.workflowSection :global(.subtitle) {
+  color: var(--light-color);
+}
+
+.mainTitle {
+  color: var(--light-color);
+}
+
+.subText {
+  width: 580px;
+  color: var(--light-color);
+  font-weight: var(--font-400);
+  font-size: 20px;
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px 0;
+}
+
+.accordionItem:first-child {
+  padding-top: 0;
+}
+
+.accordionItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.iconCircle {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.accordionItem.active .iconCircle {
+  box-shadow: 0 0 30px rgba(215, 6, 165, 0.4);
+  border-color: rgba(215, 6, 165, 0.5);
+}
+
+.accIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.accTitle {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--light-color);
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.chevronWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.accordionBodyWrapper {
+  overflow: hidden;
+}
+
+.accordionBody {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.accContent {
+  /* height: 120px; */
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--light-color);
+  line-height: 30px;
+  margin: 0;
+}
+
+.btnWrapper {
+  margin-top: 25px;
+}
+
+@media (max-width: 1600px) {
+  .workflowSection {
+    padding: 80px 0;
+  }
+
+  .subText {
+    width: 580px;
+    font-size: 20px;
+  }
+
+  .accordionItem {
+    padding: 15px 0;
+  }
+
+  .iconCircle {
+    width: 108px;
+    height: 108px;
+    margin-right: 25px;
+  }
+
+  .accTitle {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .accordionBody {
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+
+  .accContent {
+    /* height: 100px; */
+    font-size: 16px;
+    line-height: 25px;
+    margin: 10px 0 0;
+  }
+
+  .btnWrapper {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .workflowSection {
+    padding: 60px 0;
+  }
+
+  .subText {
+    width: unset;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .workflowSection {
+    padding: 40px 0;
+  }
+
+  .subText {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .accTitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .accContent {
+    /* height: 90px; */
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .accTitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accTitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .subText {
+    margin-bottom: 0px;
+  }
+
+  .accordionList {
+    margin-top: 25px;
+  }
+  .accContent {
+    /* height: fit-content; */
+  }
+}

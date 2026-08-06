@@ -1,0 +1,101 @@
+.howWeWorkSection {
+  background-color: var(--accent-color, #19042D);
+  padding: 100px 0;
+  color: var(--light-color, #ffffff);
+}
+
+.leftContent {
+  padding-right: 40px;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: var(--light-color, #ffffff);
+}
+
+.description {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  color: #e0e0e0; /* Slightly dim white/grey for readability */
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Accordion Styles */
+.accordionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px 0;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  color: var(--light-color, #ffffff);
+  padding: 0;
+}
+
+.accordionTitle {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.accordionIcon {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.accordionContentWrapper {
+  overflow: hidden;
+}
+
+.accordionContent {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #cccccc;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+  .leftContent {
+    padding-right: 0;
+    margin-bottom: 60px;
+  }
+  
+  .heading {
+    font-size: 36px;
+  }
+  
+  .description {
+    font-size: 20px;
+  }
+  
+  .accordionTitle {
+    font-size: 20px;
+  }
+  
+  .accordionContent {
+    font-size: 16px;
+  }
+}

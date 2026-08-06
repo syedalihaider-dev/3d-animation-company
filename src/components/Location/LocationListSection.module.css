@@ -1,0 +1,70 @@
+.sectionContainer {
+  padding: 80px 0;
+  background: radial-gradient(100% 100% at 100% 50%, #6a1e7778 0%, #19042d 100%);
+}
+
+.mainHeading {
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.boxLink {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.boxLink:hover {
+  transform: translateY(-5px);
+}
+
+.locationBox {
+  background: linear-gradient(207.54deg, #DDB5F0 1.11%, #E8E0E9 45.87%), #FFFFFF;
+  box-shadow: 0px 23.2891px 87.3341px rgba(0, 0, 0, 0.06);
+  border-radius: 14.5557px;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boxHeading {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 5px;
+}
+
+.boxPara {
+  font-size: 18px;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .mainHeading {
+    font-size: 60px;
+  }
+  .boxHeading {
+    font-size: 26px;
+  }
+  .boxPara {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainHeading {
+    font-size: 45px;
+  }
+  .boxHeading {
+    font-size: 22px;
+  }
+  .boxPara {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,208 @@
+.investSection {
+  /* background-color: var(--accent-color); */
+  background: radial-gradient(40% 50% at 30% 60%, #6b3375 0%, #19042d 55%);
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+}
+
+.mainTitle {
+  color: var(--light-color);
+  font-family: var(--font-heading), sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.subText {
+  color: var(--light-color);
+  font-weight: 400;
+}
+
+.rocketWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 529px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.rocketImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.floatingBox {
+  position: absolute;
+  padding: 20px;
+  width: 160px;
+  background: linear-gradient(203.91deg, #660B54 -11.55%, #2F053A 27.3%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 20px 40px rgba(200, 8, 163, 0.1);
+  border-radius: 18px;
+  z-index: -1;
+}
+
+.box1 {
+  top: 0%;
+  left: -15%;
+}
+
+.box2 {
+  top: 25%;
+  right: -10%;
+}
+
+.box3 {
+  bottom: 15%;
+  left: -25%;
+}
+
+.boxIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.boxValue {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.boxText {
+  font-size: 13px;
+  color: #fff;
+  white-space: pre-line;
+}
+
+/* Accordion */
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 15px 0;
+}
+
+.accordionItem:last-child {
+  border-bottom: none;
+}
+
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iconCircle {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.accordionItem.active .iconCircle {
+  transform: scale(1.05);
+}
+
+.accIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.accTitle {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.accordionItem.active .accTitle {
+  font-weight: 600;
+}
+
+.accordionBodyWrapper {
+  overflow: hidden;
+}
+
+.accordionBody {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 133px;
+}
+
+.accContent {
+  font-size: 20px;
+  color: #d8d3dc;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.accButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.learnBtn {
+  font-size: 14px !important;
+  padding: 10px 24px !important;
+}
+
+.talkBtn {
+  font-size: 14px !important;
+  padding: 10px 24px !important;
+}
+
+@media (max-width: 991px) {
+  .box1 { top: -5%; left: 0; }
+  .box2 { top: 40%; right: 0; }
+  .box3 { bottom: 0; left: 10%; }
+  
+  .accordionList {
+    padding-left: 0;
+  }
+  
+  .accTitle {
+    font-size: 24px;
+  }
+  
+  .iconCircle {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+  }
+  
+  .accordionBody {
+    padding-left: 95px;
+  }
+  
+  .accContent {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .floatingBox {
+    display: none; /* Hide floating boxes on very small screens to avoid clutter */
+  }
+}

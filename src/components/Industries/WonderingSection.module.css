@@ -1,0 +1,253 @@
+.section {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+  color: var(--accent-color);
+  min-height: 800px;
+}
+
+.bgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.bgGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(63.46% 96.32% at 50% 50%, #FFFFFF 0%, #FFDEFD 100%);
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.bgGradient.visible {
+  opacity: 0.9;
+}
+
+.subHeader {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.mainTitle {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(90.99deg, #19042D 38.72%, #CB09A4 116.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.industryList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.industryItem {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: var(--font-lexend);
+  color: #19042d6e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+}
+
+.industryItem:hover, .industryItem.active {
+  color: var(--primary-color);
+}
+
+.arrowIcon {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.industryItem.active .arrowIcon, .industryItem:hover .arrowIcon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.rightContent {
+  padding-left: 40px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.visibleRightContent {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.contentIntro {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.contentTitle {
+  font-size: 40px;
+  font-weight: 500;
+  color: #CB09A4;
+  margin-bottom: 30px;
+}
+
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.tickIcon {
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.bulletText {
+  font-size: 25px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  transform: translateY(10px);
+}
+
+.visibleActions {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.btnPrimary {
+  background: #CB09A4;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+}
+
+.btnSecondary {
+  background: rgba(255, 255, 255, 0.4);
+  color: #CB09A4;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(203, 9, 164, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnSecondary:hover {
+  background: #CB09A4;
+  color: #fff;
+}
+
+.customCta {
+  background: transparent !important;
+  color: #CB09A4 !important;
+  border-color: #CB09A4 !important;
+}
+
+.customCta svg, .customCta img {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(87%) saturate(5833%) hue-rotate(309deg) brightness(97%) contrast(106%);
+}
+
+.customCta:hover {
+  background: #CB09A4 !important;
+  color: #fff !important;
+}
+
+.customCta:hover svg, .customCta:hover img {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+
+@media (max-width: 991px) {
+  .mainTitle {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .rightContent {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .industryItem {
+    font-size: 20px;
+  }
+  .contentTitle {
+    font-size: 30px;
+  }
+  .bulletText {
+    font-size: 18px;
+  }
+}

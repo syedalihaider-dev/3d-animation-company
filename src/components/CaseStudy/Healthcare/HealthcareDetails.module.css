@@ -1,0 +1,43 @@
+/* Second Section (Details) */
+.detailsSection {
+  padding: 250px 0 80px 0;
+  background: radial-gradient(63.46% 96.32% at 50% 50%, #FFFFFF 0%, #ffcefc 100%);
+  color: var(--accent-color);
+  position: relative;
+  z-index: 1;
+}
+
+.detailCard {
+  text-align: center;
+  padding: 10px;
+  height: 100%;
+  border-radius: 20px;
+  background: transparent;
+  transition: all 0.4s ease;
+}
+
+.detailHeading {
+  font-size: 40px;
+  line-height: 50px; 
+  font-weight: var(--font-400);
+  margin-bottom: 20px;
+}
+
+.detailPara {
+  font-size: 20px;
+  font-weight: var(--font-400);
+  line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+  .detailHeading { font-size: 32px; }
+  .detailPara { font-size: 20px; }
+  .detailsSection { padding-top: 180px; }
+}
+
+@media (max-width: 768px) {
+  .detailCard { padding: 15px; margin-bottom: 30px; }
+  .detailHeading { font-size: 28px; }
+  .detailPara { font-size: 18px; }
+  .detailsSection { padding-top: 100px; }
+}

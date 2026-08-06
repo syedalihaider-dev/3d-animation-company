@@ -1,0 +1,61 @@
+.statsSection {
+  background: radial-gradient(30% 100% at 25% 50%, #6a1e77 0%, #19042d 100%);
+  padding: 80px 0;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.numberContainer {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.symbol {
+  color: var(--primary-color);
+}
+
+.label {
+  color: #796A87;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .heading {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}

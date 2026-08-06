@@ -1,0 +1,253 @@
+.featuredSection {
+  padding: 80px 0;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.featuredSection::before {
+  content: "";
+  width: 838px;
+  height: 838px;
+  background: linear-gradient(180deg, #FC00A0 0%, #CB12ED 100%);
+  opacity: 0.3;
+  filter: blur(255.306px);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.featuredSection:after {
+    content: "";
+    opacity: .3;
+    filter: blur(255.306px);
+    z-index: -1;
+    background: linear-gradient(200deg, #fc00a0 0%, #cb12ed 100%);
+    width: 838px;
+    height: 838px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.headerArea {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subheading {
+  font-family: var(--font-base, sans-serif);
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.mainHeading {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 100px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-family: var(--font-base, sans-serif);
+  font-size: 22px;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Tabs */
+.tabsContainer {
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabsList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tabItem {
+  font-family: var(--font-base, sans-serif);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 15px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.tabItem:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tabItem.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.activeIndicator {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px 3px 0 0;
+}
+
+/* Projects */
+.projectsContainer {
+  position: relative;
+}
+
+.projectRow {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.projectRow:last-child {
+  margin-bottom: 0;
+}
+
+.projectContent {
+  padding-right: 30px;
+}
+
+.projectTitle {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.projectDescription {
+  font-family: var(--font-base, sans-serif);
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.featuresRow {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureLabel {
+  font-family: var(--font-base, sans-serif);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.featureValue {
+  font-family: var(--font-base, sans-serif);
+  font-size: 19px;
+  color: #fff;
+  white-space: pre-line;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.logoImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 666px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.logoImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.coverImageWrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.coverImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .mainHeading {
+    font-size: 60px;
+  }
+
+  .projectTitle {
+    font-size: 40px;
+  }
+
+  .projectContent {
+    padding-right: 0;
+  }
+
+  .tabsList {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 40px;
+  }
+
+  .subheading {
+    font-size: 20px;
+  }
+
+  .paragraph,
+  .projectDescription {
+    font-size: 18px;
+  }
+
+  .projectTitle {
+    font-size: 32px;
+  }
+
+  .featureValue {
+    font-size: 16px;
+  }
+}

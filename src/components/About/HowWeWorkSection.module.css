@@ -1,0 +1,202 @@
+.howWeWorkSection {
+  background-color: var(--accent-color);
+  padding: 80px 0;
+  color: var(--light-color);
+}
+
+.leftContent {
+  padding-right: 40px;
+}
+
+.heading {
+  margin: 0px;
+}
+
+.description {
+  margin: 30px 0 40px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px 0;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  color: var(--light-color);
+  padding: 0;
+}
+
+.accordionTitle {
+  font-size: 25px;
+  font-weight: var(--font-400);
+  margin: 0;
+}
+
+.accordionIcon {
+  font-size: 30px;
+  font-weight: var(--font-400);
+  line-height: 40px;
+}
+
+.accordionContentWrapper {
+  overflow: hidden;
+}
+
+.accordionContent {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: var(--font-400);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1600px) {
+  .leftContent {
+    padding-right: 35px;
+  }
+
+  .description {
+    margin: 25px 0 30px;
+  }
+
+  .buttonsWrapper {
+    gap: 20px;
+  }
+
+  .accordionItem {
+    padding: 15px 0;
+  }
+
+  .accordionTitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .accordionIcon {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .accordionContent {
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .howWeWorkSection {
+    padding: 60px 0;
+  }
+
+  .leftContent {
+    padding-right: 25px;
+  }
+
+  .description {
+    margin: 20px 0 25px;
+  }
+
+  .buttonsWrapper {
+    gap: 20px;
+  }
+
+  .accordionItem {
+    padding: 15px 0;
+  }
+
+  .accordionTitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .accordionIcon {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .howWeWorkSection {
+    padding: 40px 0;
+  }
+
+  .leftContent {
+    padding-right: 0px;
+  }
+
+  .description {
+    margin: 15px 0 25px;
+  }
+
+  .buttonsWrapper {
+    gap: 10px;
+  }
+
+  .accordionItem {
+    padding: 15px 0;
+  }
+
+  .accordionTitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .accordionIcon {
+    font-size: 20px;
+  }
+
+  .accordionContent {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .leftContent {
+    margin-bottom: 25px;
+  }
+
+  .description {
+    margin: 10px 0 20px;
+  }
+
+  .accordionItem {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .description {
+    margin: 10px 0 20px;
+  }
+
+  .accordionItem {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .accordionTitle {
+    text-align: left;
+  }
+}

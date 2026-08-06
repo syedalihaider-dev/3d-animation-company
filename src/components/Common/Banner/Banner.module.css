@@ -1,0 +1,401 @@
+.bannerSection {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--bg-color);
+  overflow: hidden;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+.bgMedia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #000000e3 0%, #000000b8 100%);
+  z-index: -1;
+}
+
+.contentCol {
+  position: relative;
+  z-index: 2;
+}
+
+.contentCol.centered {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderContainer {
+  width: 1321px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contentCol.centered .sliderContainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+.heading {
+  font-size: 70px;
+  line-height: 80px;
+  font-family: var(--font-heading), sans-serif;
+  color: #fff;
+}
+
+.description {
+  height: 160px;
+  font-family: var(--font-base), sans-serif;
+  color: var(--light-color);
+  max-width: 752px;
+  border-left: 1px solid var(--light-color);
+  padding-left: 20px;
+  margin: 40px 0;
+}
+
+.contentCol.centered .description {
+  border-left: none;
+  padding-left: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actionRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contentCol.centered .actionRow {
+  justify-content: center;
+}
+
+.trustBadges {
+  margin-top: 40px;
+}
+
+.progressContainer {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  z-index: 10;
+}
+
+.progressContainer span {
+  margin-bottom: 80px;
+}
+
+.progressSegment {
+  width: 4px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+.breadcrumbs {
+  margin-bottom: 20px;
+  font-family: var(--font-base), sans-serif;
+  color: var(--light-color);
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (max-width:1600px) {
+  .sliderContainer {
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .heading {
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  .description {
+    height: 105px;
+    margin: 30px 0;
+  }
+
+  .trustBadges {
+    margin-top: 30px;
+  }
+
+  .progressContainer {
+    right: 2%;
+  }
+
+  .playBtn {
+    width: 80px;
+    height: 80px;
+  }
+
+  .progressContainer span {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:1399px) {
+  .sliderContainer {
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .heading {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .description {
+    height: 75px;
+    max-width: 752px;
+    padding-left: 15px;
+    margin: 10px 0;
+  }
+
+  .actionRow {
+    margin-top: 10px;
+  }
+
+  .trustBadges {
+    margin-top: 20px;
+  }
+
+  .playBtn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .progressContainer {
+    right: 3%;
+    top: 58%;
+  }
+
+  .progressContainer span {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:1199px) {
+  .sliderContainer {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .description {
+    height: 65px;
+    max-width: 100%;
+  }
+
+  .playBtn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .progressContainer {
+    right: 2%;
+    top: 55%;
+  }
+
+  .progressContainer span {
+    font-size: 14px;
+  }
+
+  .actionRow {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .sliderContainer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .description {
+    margin: 30px 0;
+  }
+
+  .trustBadges {
+    margin-top: 30px;
+  }
+
+  .progressContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .bannerSection {
+    padding-top: 130px;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .description {
+    height: 85px;
+    margin: 25px 0;
+  }
+
+  .trustBadges {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .bannerSection {
+    height: unset;
+    padding: 130px 0 40px;
+  }
+
+  .heading {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .trustBadges {
+    margin-top: 25px;
+  }
+}
+
+.videoWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.videoWrapper iframe {
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.videoPopupModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.modalContent {
+  position: relative;
+  width: 90%;
+  max-width: 1100px;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 44px;
+  cursor: pointer;
+  z-index: 10001;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}
+
+.popupVideo, .popupIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: contain;
+}
+
+

@@ -1,0 +1,130 @@
+.thankYouSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(60.57% 91.94% at 69.22% 43%, #1a082b 0%, #0c0215 100%);
+  color: #ffffff;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.thankYouSection::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: rgba(203, 9, 164, 0.15);
+  filter: blur(150px);
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+  z-index: 1;
+}
+
+.thankYouSection::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(137, 22, 159, 0.12);
+  filter: blur(150px);
+  border-radius: 50%;
+  bottom: -150px;
+  left: -150px;
+  z-index: 1;
+}
+
+.contentWrapper {
+  max-width: 650px;
+  text-align: center;
+  z-index: 2;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  background: rgba(25, 4, 45, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 60px 40px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.iconContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d706a5 0%, #89169f 100%);
+  box-shadow: 0 15px 30px rgba(215, 6, 165, 0.4);
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-family: var(--font-lexend), sans-serif;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90.99deg, #ffffff 40%, #cb09a4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.subheading {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 220px !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .contentWrapper {
+    padding: 40px 20px;
+    border-radius: 24px;
+  }
+  
+  .heading {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  
+  .subheading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}

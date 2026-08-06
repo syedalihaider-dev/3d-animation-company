@@ -1,0 +1,61 @@
+.ctaButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 34px;
+  background: linear-gradient(135deg, #e007b4 0%, #760b93 100%);
+  border-radius: 100px;
+  color: #ffffff;
+  font-family: var(--font-base), sans-serif;
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 16px -4px rgba(224, 7, 180, 0.3);
+  z-index: 1;
+}
+
+.ctaButton:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -4px rgba(224, 7, 180, 0.5), 0 0 15px rgba(224, 7, 180, 0.2);
+}
+
+.ctaButton:active {
+  transform: translateY(1px);
+}
+
+.outline {
+  background: rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.outline:hover {
+  background: rgba(224, 7, 180, 0.08);
+  border-color: #e007b4;
+  box-shadow: 0 8px 20px -6px rgba(224, 7, 180, 0.3);
+}
+
+.icon {
+  margin-left: 10px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ctaButton:hover .icon {
+  transform: translateX(4px);
+}
+
+@media (max-width: 1199px) {
+  .ctaButton {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}

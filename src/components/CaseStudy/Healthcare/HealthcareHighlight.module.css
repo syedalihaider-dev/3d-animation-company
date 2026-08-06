@@ -1,0 +1,65 @@
+.highlightSection {
+  position: relative;
+  padding: 80px 0;
+  color: #FFFFFF;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.highlightSection::before {
+  content: '';
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background: linear-gradient(180deg, #FC00A0 0%, #CB12ED 100%);
+  opacity: 0.5;
+  filter: blur(303.443px);
+  bottom: -100%;
+  left: -5%;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.mainHeading {
+  font-size: 45px;
+  font-weight: var(--font-400);
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.para {
+  font-size: 20px;
+  font-weight: var(--font-400);
+  line-height: 30px;
+}
+
+.subTitle {
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: var(--font-400);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subPara {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: var(--font-300);
+  color: #FFFFFF;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .mainHeading { font-size: 40px; }
+  .para { font-size: 18px; }
+  .subTitle { font-size: 16px; }
+  .subPara { font-size: 18px; }
+}
+
+@media (max-width: 768px) {
+  .mainHeading { font-size: 32px; }
+  .para { font-size: 16px; }
+  .highlightSection { padding: 60px 0; }
+}

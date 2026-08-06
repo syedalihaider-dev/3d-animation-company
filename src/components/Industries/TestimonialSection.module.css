@@ -1,0 +1,243 @@
+.section {
+  padding: 80px 0;
+  background: radial-gradient(100% 100% at 100% 50%, #6a1e7778 0%, #19042d 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+
+.subText {
+  color: rgba(255,255,255,0.8);
+}
+
+.rightCol {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: end;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.badge:hover {
+  transform: translateY(-5px);
+}
+
+.badgeLogo {
+  height: 24px;
+  object-fit: contain;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+
+.ratingRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  color: #FFC107;
+}
+
+.sliderTrack {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sliderTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.slideCard {
+  min-width: 300px;
+  height: 270px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.slideImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.slideCard:hover .slideImg {
+  transform: scale(1.05);
+}
+
+.slideOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(90, 12, 97, 0) 50%, #5A0C61 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.clientInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.clientName {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.clientRole {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  margin: 0;
+}
+
+.playBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.slideCard:hover .playBtn {
+  background: var(--primary-color, #CB09A4);
+  border-color: var(--primary-color, #CB09A4);
+  transform: scale(1.1);
+}
+
+.controlsRow {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow:not(:disabled):hover {
+  background: var(--primary-color, #CB09A4);
+  border-color: var(--primary-color, #CB09A4);
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.ctaRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modalWrapper {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+}
+
+.modalContent {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.closeBtn {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.closeBtn:hover {
+  color: var(--primary-color, #CB09A4);
+}
+
+@media (max-width: 992px) {
+  .slideCard {
+    min-width: 350px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading { font-size: 36px; }
+  .rightCol { gap: 20px; }
+  .slideCard { min-width: 280px; height: 200px; }
+  .ctaRow { flex-direction: column; }
+  .ctaRow > * { width: 100%; justify-content: center; }
+}

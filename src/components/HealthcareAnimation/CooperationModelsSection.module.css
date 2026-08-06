@@ -1,0 +1,292 @@
+.cooperationModelsSection {
+  padding: 80px 0;
+  background: radial-gradient(63.46% 96.32% at 50% 50%, #FFFFFF 0%, #FFDEFD 100%);
+  overflow: hidden;
+}
+
+.mainHeading {
+  font-weight: var(--font-500);
+  font-size: 70px;
+  line-height: 80px;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(90.99deg, #19042D 38.72%, #CB09A4 116.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.topParagraph {
+  color: var(--accent-color);
+  max-width: 1199px;
+  margin: 10px auto 30px;
+}
+
+.swiperContainer {
+  padding: 10px 5px 25px 5px;
+}
+
+.swiperSlide {
+  height: auto;
+  display: flex;
+}
+
+.modelCard {
+  background: linear-gradient(207.54deg, #DDB5F0 1.11%, #E8E0E9 45.87%);
+  border: 1px solid rgba(200, 9, 164, 0.2);
+  border-radius: 18px;
+  padding: 40px;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  margin-top: 10px;
+}
+
+.modelCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 20px 40px rgba(200, 9, 164, 0.15);
+  border-color: rgba(200, 9, 164, 0.5);
+}
+
+.iconWrapper {
+  width: 61px;
+  height: 61px;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.cardTitle {
+  font-weight: var(--font-400);
+  font-size: 25px;
+  line-height: 35px;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.cardParagraph {
+  font-size: 16px;
+  color: var(--accent-color);
+  line-height: 25px;
+  height: 120px;
+  margin-bottom: 0;
+}
+
+.navigationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.navBtn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 20px rgba(203, 9, 164, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.navBtn:hover {
+  transform: scale(1.1);
+  background-color: #a80786;
+  box-shadow: 0 10px 28px rgba(203, 9, 164, 0.45);
+}
+
+.navBtn:active {
+  transform: scale(0.95);
+}
+
+.navIcon {
+  transition: transform 0.3s ease;
+}
+
+.navBtn:hover .navIcon {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1600px) {
+  .mainHeading {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .topParagraph {
+    max-width: 1100px;
+    margin: 10px auto 30px;
+  }
+
+  .modelCard {
+    padding: 30px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .cardParagraph {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .navigationWrapper {
+    margin-top: 30px;
+  }
+
+  .navBtn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .cooperationModelsSection {
+    padding: 60px 0;
+  }
+
+  .mainHeading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .topParagraph {
+    max-width: 750px;
+    margin: 0px auto 25px;
+  }
+
+  .modelCard {
+    padding: 25px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .cardParagraph {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .navigationWrapper {
+    margin-top: 25px;
+  }
+
+  .navBtn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .cooperationModelsSection {
+    padding: 40px 0;
+  }
+
+  .mainHeading {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .topParagraph {
+    max-width: 650px;
+  }
+
+  .modelCard {
+    padding: 25px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .cardParagraph {
+    font-size: 14px;
+    line-height: 22px;
+    height: 100px;
+  }
+
+  .navigationWrapper {
+    margin-top: 25px;
+    gap: 10px;
+  }
+
+  .navBtn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mainHeading {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .topParagraph {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .modelCard {
+    padding: 20px;
+  }
+
+  .cardTitle {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .navBtn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .topParagraph {
+    max-width: 100%;
+  }
+
+  .modelCard {
+    padding: 20px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .cardParagraph {
+    height: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cardParagraph {
+    height: 180px;
+  }
+}

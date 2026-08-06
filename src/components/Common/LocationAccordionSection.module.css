@@ -1,0 +1,271 @@
+.locationSection {
+  padding: 80px 0;
+  background: radial-gradient(63.46% 96.32%, #ffffff 0%, #f4dbf3 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionHeading {
+  display: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  margin-bottom: 50px;
+}
+
+.accordionContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.accordionItem {
+  background: rgba(25, 4, 45, 0.05);
+  border-radius: 24px;
+  border: 1px solid rgba(25, 4, 45, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.accordionItem.active {
+  background: rgba(25, 4, 45, 0.08);
+  border-color: rgba(203, 9, 164, 0.15);
+  box-shadow: 0 10px 30px -10px rgba(25, 4, 45, 0.08);
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordionTitle {
+  font-size: 28px;
+  font-weight: var(--font-600);
+  color: #19042D;
+  margin: 0;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #19042D;
+  border-radius: 50%;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(25, 4, 45, 0.25);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.bodyWrapper {
+  overflow: hidden;
+}
+
+.accordionBody {
+  padding: 10px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-top: 1px solid rgba(25, 4, 45, 0.06);
+}
+
+.subItemRow {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.subItemRow:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.imageCol {
+  flex: 1;
+  width: 50%;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.5;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px -10px rgba(25, 4, 45, 0.25);
+  background-color: rgba(25, 4, 45, 0.1);
+}
+
+.subItemImage {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.subItemRow:hover .subItemImage {
+  transform: scale(1.04);
+}
+
+.contentCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subItemHeading {
+  font-size: 36px;
+  font-weight: var(--font-700);
+  color: #19042D;
+  margin-bottom: 18px;
+  line-height: 1.25;
+}
+
+.subItemDescription {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(25, 4, 45, 0.85);
+  margin-bottom: 28px;
+}
+
+.subItemDescription a {
+  color: #CB09A4;
+  text-decoration: underline;
+  font-weight: var(--font-600);
+  transition: color 0.2s ease;
+}
+
+.subItemDescription a:hover {
+  color: #760b93;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #F1BD05 0%, #D88E02 100%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: var(--font-600);
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: 0 8px 20px -4px rgba(241, 189, 5, 0.45);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -4px rgba(241, 189, 5, 0.65), 0 0 15px rgba(241, 189, 5, 0.25);
+  color: #ffffff;
+}
+
+.ctaButton:active {
+  transform: translateY(1px);
+}
+
+.btnArrow {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ctaButton:hover .btnArrow {
+  transform: translateX(4px);
+}
+
+/* Responsive Rules */
+@media (max-width: 1399px) {
+  .locationSection {
+    padding: 60px 0;
+  }
+  .sectionHeading {
+    margin-bottom: 40px;
+  }
+  
+  .subItemHeading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .locationSection {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .accordionHeader {
+    padding: 22px 30px;
+  }
+
+  .accordionBody {
+    padding: 10px 30px 30px 30px;
+    gap: 40px;
+  }
+
+  .subItemRow,
+  .subItemRow:nth-child(even) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .imageCol {
+    width: 100%;
+  }
+
+  .subItemHeading {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .subItemDescription {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sectionHeading {
+    margin-bottom: 30px;
+  }
+
+  .accordionTitle {
+    font-size: 20px;
+  }
+
+  .iconContainer {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .accordionHeader {
+    padding: 18px 20px;
+  }
+
+  .accordionBody {
+    padding: 10px 20px 25px 20px;
+    gap: 35px;
+  }
+
+  .ctaButton {
+    padding: 12px 26px;
+    font-size: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+}
