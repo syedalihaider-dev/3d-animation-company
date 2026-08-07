@@ -4,8 +4,8 @@ export const brandInfo = {
     href: "tel:+1-443-487-0213"
   },
   email: {
-    display: "info@pixelstudiosinc.com",
-    href: "mailto:info@pixelstudiosinc.com"
+    display: "info@cloudanimations.com",
+    href: "mailto:info@cloudanimations.com"
   },
   address: {
     display: "41 Madison Ave, New York, NY 10010, USA"

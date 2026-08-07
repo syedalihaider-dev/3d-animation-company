@@ -28,8 +28,8 @@ export async function POST(request) {
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
-        user: 'no-reply@pixelstudiosinc.com',
-        pass: 'iT0;&QARomPKezZ48C',
+        user: 'no-reply@cloudanimations.com',
+        pass: 'ibE=zBEBSi]U',
       },
     });
 
@@ -70,14 +70,13 @@ export async function POST(request) {
     const recipients = [
       'zain@iceanimations.com',
       'ppc@iceanimations.com',
-      'saif.ahmed@iceanimations.com',
-      'hussam.khan@iceanimations.com',
+      'usama.azeem@iceanimations.com',
       'ali.haider@canvasdigital.net'
     ];
 
     // Send Mail
     await transporter.sendMail({
-      from: '"3D Animation Company | Website Lead" <no-reply@pixelstudiosinc.com>',
+      from: '"3D Animation Company | Website Lead" <no-reply@cloudanimations.com>',
       to: recipients.join(', '),
       subject: `New Website Lead - ${Form_name}`,
       html: htmlContent,
