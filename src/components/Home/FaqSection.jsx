@@ -3,61 +3,15 @@ import React from "react";
 import GlobalFaqSection from "../Common/FaqSection";
 
 const faqs = [
-  {
-    question: "Can you help with custom animations for my specific business?",
-    answer: "Yes. We strictly create custom animations tailored to your business. We avoid pre-built templates entirely, ensuring every video is genuinely specific to your brand, audience, and unique goals.",
-  },
-  {
-    question: "What makes your animation company different from the hundreds of others?",
-    answer: "We act as a strategic creative partner, not just a production house. We prioritize real business results, ensuring your video actually drives growth and hits your specific goals.",
-  },
-  {
-    question: "Do you offer complete end-to-end video animation services?",
-    answer: "Yes. We handle the entire pipeline under one roof—from scriptwriting and storyboarding to animation, sound design, and final delivery—giving you a single, dedicated point of contact.",
-  },
-  {
-    question: "Can you handle animation projects that involve high volume or multiple videos?",
-    answer: "We easily scale our production capacity for high-volume campaigns. We utilize structured calendars, dedicated account management, and reusable style systems to efficiently deliver multi-video projects at scale.",
-  },
-  {
-    question: "How long does it take to create a professional animated video?",
-    answer: "A standard 60 to 90-second animated video typically takes three to five weeks from brief sign-off to delivery. Complex 3D or VFX projects will require additional time.",
-  },
-  {
-    question: "How many revision rounds are included?",
-    answer: "Our standard packages include two full revision rounds built into the production schedule. Additional rounds are available and transparently priced, ensuring clear expectations before production begins.",
-  },
-  {
-    question: "How can animation specifically help grow my business?",
-    answer: "Professional video animation services drive growth by increasing engagement with the audience and delivers a clear message to the prospects. Specially when the Video animation team takes a deep dive into understanding about the idea of the product/service and bring the stunning visuals that focused on converting your prospects.",
-  },
-  {
-    question: "Can animated videos genuinely increase conversion rates?",
-    answer: "Yes. Well-produced explainer videos significantly boost conversion rates by reducing cognitive friction, keeping visitors engaged, and answering core questions before prospects leave for a competitor.",
-  },
-  {
-    question: "What makes animated video so effective as a marketing format?",
-    answer: "Animation visualizes impossible-to-photograph concepts, combines audio and motion for faster brain processing, and gives you total, precise control over every single on-brand visual element.",
-  },
-  {
-    question: "How does animation simplify complex products and services?",
-    answer: "It clearly visualizes software workflows, internal device mechanics, or abstract concepts. Animation bridges the gap between your complex product and your audience’s immediate understanding.",
-  },
-  {
-    question: "What is the process for starting a project with 3D Animation Company?",
-    answer: "Simply book a free 30-minute discovery call to discuss your goals. Within 48 hours, we will provide a detailed, no-obligation proposal outlining the scope, timeline, and investment.",
-  },
-  {
-    question: "Which is more effective for product demos: 2D or 3D animation?",
-    answer: "2D is perfect for software interfaces and abstract services, while 3D excels at showcasing physical products from multiple angles. We will help you choose based on your specific brief.",
-  },
+  { question: "How much does a 3D animation company charge?", answer: "Most professional 3D animation sits between $2,500 and $5,000 for a sixty second animated explainer with stock character rigs. Custom characters, photoreal product work or medical accuracy push the range to roughly $7,000 per minute. Price follows three things: modelling complexity, animation length and render load. We quote each one separately so you can see exactly what you are paying for." },
+  { question: "What types of 3D animation do you produce?", answer: "Product animation, character animation, architectural visualisation, medical animation, explainer films, motion graphics, logo animation, CGI and VFX, game cinematics and training simulations. If it can be modelled, we can move it." },
+  { question: "What does your 3D animation process look like?", answer: "Five stages: discovery and script, storyboard and style frames, modelling and rigging, animation and rendering, then sound and delivery. You approve each stage before the next one starts, which is why our projects rarely need a rebuild." },
+  { question: "How long does a 3D animation take?", answer: "A sixty second explainer typically runs four to six weeks. Photoreal product films and character driven work run six to ten weeks. Rush schedules are possible when the script is locked early." },
+  { question: "Can I hire 3D animators for an ongoing retainer?", answer: "Yes. Many clients start with one film and move to a monthly retainer once the pipeline proves itself. You get a dedicated animation lead, reserved render capacity and a predictable monthly output." },
+  { question: "What do you need from me before we start?", answer: "Your brand guidelines, any CAD or product files you hold, your reference films and a clear answer to one question: what should the viewer do after watching?" },
+  { question: "Do you only work with large brands?", answer: "No. We work with funded startups, mid market teams and enterprises. The brief matters more than the logo attached to it." },
 ];
 
 export default function FaqSection() {
-  return (
-    <GlobalFaqSection
-      heading="Video Animation Services, Answered With Authority"
-      faqs={faqs}
-    />
-  );
+  return <GlobalFaqSection heading="Frequently Asked Questions About 3D Animation Services" faqs={faqs} />;
 }

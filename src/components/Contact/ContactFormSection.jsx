@@ -44,7 +44,7 @@ const ContactFormSection = () => {
             variants={staggerContainer}
           >
             <motion.h2 variants={fadeInUp} className={styles.mainHeading}>
-              Interested in making a video with us?
+              Interested in working with our 3D animation company?
             </motion.h2>
 
             <motion.form 
@@ -154,7 +154,8 @@ const ContactFormSection = () => {
               <div className={styles.checkboxWrapper}>
                 <input type="checkbox" id="agreement" required />
                 <label htmlFor="agreement" className={styles.checkboxText}>
-                  I agree to receive recurring automated text messages to the phone number provided about updates and inquiries from 3D Animation Company. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our Terms of Use and Privacy Policy.
+                  {/* I agree to receive recurring automated text messages to the phone number provided about updates and inquiries from 3D Animation Company. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our Terms of Use and Privacy Policy. */}
+                  Tell us what you are building and what the film has to achieve. The more specific the brief, the more accurate the quote.
                 </label>
               </div>
 
@@ -173,9 +174,9 @@ const ContactFormSection = () => {
             variants={staggerContainer}
           >
             <motion.div variants={fadeInUp} className={styles.topBox}>
-              <h2 className={styles.topBoxHeading}>They Didn’t Shy Away! So Shouldn’t You!</h2>
+              <h2 className={styles.topBoxHeading}>3D Animation Company works with every type of brand.</h2>
               <p className={styles.topBoxPara}>
-                They didn’t wait, overthink, or hold back. They moved and won. The only difference between them and you is taking that first step.
+                From funded startups and nonprofits to category leaders. Whatever the size of the logo, the approach is the same: understand the offer, find the one idea worth animating, and build the film around it.
               </p>
 
               <div className={styles.logosGrid}>

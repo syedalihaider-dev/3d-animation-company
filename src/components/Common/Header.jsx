@@ -150,7 +150,7 @@ const navData = [
   // },
   {
     name: 'OUR WORK',
-    path: '/our-work',
+    path: '/portfolio',
     // isDropdown: true,
     // items: [
     //   { name: 'PORTFOLIO', path: '/our-work' },

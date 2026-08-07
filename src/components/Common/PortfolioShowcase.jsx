@@ -368,7 +368,12 @@ function PortfolioCard({ item, onClick }) {
   );
 }
 
-export default function PortfolioShowcase() {
+export default function PortfolioShowcase({
+  heading = "OUR LATEST PROJECTS",
+  description,
+  showFilters = true,
+  category,
+}) {
   const [activeTab, setActiveTab] = useState("VIEW ALL");
   const [hoveredTab, setHoveredTab] = useState(null);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
@@ -380,6 +385,7 @@ export default function PortfolioShowcase() {
 
   // Filter items based on active tab
   const filteredItems = useMemo(() => {
+    if (category) return portfolioItems.filter(item => item.category === category);
     if (activeTab === "VIEW ALL") return portfolioItems;
     return portfolioItems.filter(item => item.category === activeTab);
   }, [activeTab]);
@@ -428,11 +434,13 @@ export default function PortfolioShowcase() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          OUR LATEST PROJECTS
+          {heading}
         </motion.h2>
 
+        {description && <p className={styles.description}>{description}</p>}
+
         {/* Tabs Section */}
-        <motion.div
+        {showFilters && <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -502,7 +510,7 @@ export default function PortfolioShowcase() {
           >
             <Image src="/icons/slider-arrow.png" alt="Next" width={10} height={15} />
           </button>
-        </motion.div>
+        </motion.div>}
 
         {/* Grid Section */}
         <motion.div layout className={`row ${styles.grid}`}>

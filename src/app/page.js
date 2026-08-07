@@ -12,6 +12,7 @@ import TrustedClientsSection from "@/components/Home/TrustedClientsSection";
 import TestimonialSection from "@/components/Common/TestimonialSection";
 import FaqSection from "@/components/Home/FaqSection";
 
+/*
 const bannerSlides = [
   {
     title: "Professional Video Animation Company - High Impact Animation Services",
@@ -26,17 +27,22 @@ const bannerSlides = [
     description: "Don’t worry, Our team 2D & 3D animation services in the USA always begin with a genuine discovery process. We learn about your product, your audience, your brand voice, your market positioning, and precisely what you want a viewer to think, feel, or do after watching the video."
   }
 ];
+*/
 
 export const metadata = {
-  title: "Award-Winning Professional Video Animation Company",
-  description: "Need video animation services that convert browsers into buyers? 3D Animation Company builds custom 2D & 3D animation for brands across the USA. Get a free quote",
+  title: "3D Animation Company | Professional 3D Animation Services",
+  description: "3D Animation Company is a professional 3D animation studio delivering product, character, medical and architectural 3D animation services for global brands. Get a free quote.",
 };
 
 export default function Home() {
   return (
     <main>
       <Banner
+        /* Slider preserved for future use:
         slides={bannerSlides}
+        */
+        title="3D Animation Company That Is Trusted By Top Brands"
+        description="We are a professional 3D animation studio built around one belief: a great frame is engineering as much as it is art. From product films and character animation to medical visualisation and architectural walkthroughs, our 3D animation services turn complicated ideas into footage your audience actually finishes watching."
         video="/videos/home.webm"
         showPlayButton={true}
         showTrustBadges={true}
@@ -45,7 +51,12 @@ export default function Home() {
       <MissionSection />
       <ServicesSection />
       <WhyInvestSection />
-      <PortfolioShowcase />
+      <PortfolioShowcase
+        heading="3D Animation Portfolio"
+        description="Stories rendered frame by frame for founders, product leads and agencies who needed the work to hold up on a fifty inch screen."
+        showFilters={false}
+        category="3D Animation"
+      />
       <WhyPartnerSection />
       <GetQuoteSection />
       <ProcessSliderSection />

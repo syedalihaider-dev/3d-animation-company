@@ -7,33 +7,28 @@ import styles from './HowWeWorkSection.module.css';
 const accordionData = [
   {
     id: 1,
-    title: '1 Discovery',
-    content: 'We understand your goals, audience, and message.'
+    title: 'Team Structure',
+    content: 'You get one animation director, one producer and a crew sized to your scope. The director owns the creative call, the producer owns the calendar, and you never have to guess who to message.'
   },
   {
     id: 2,
-    title: '2 Strategy',
-    content: 'We map out the concept and direction that will perform.'
+    title: 'Operating Rhythm',
+    content: 'A predictable cadence removes emotion from crisis management. Fixed checkpoints, a weekly written update and a shared milestone board mean decisions get made on evidence, not urgency. Teams stay empowered to act without waiting for a leadership signature.'
   },
   {
     id: 3,
-    title: '3 Script & Storyboard',
-    content: 'We turn ideas into a clear narrative and visual flow.'
+    title: 'Feedback And Revisions',
+    content: 'Comments are collected on a review platform, timestamped against the frame in question and consolidated into one action list per round. Two full rounds are included at every stage as standard.'
   },
   {
     id: 4,
-    title: '4 Design',
-    content: 'We create the visual style aligned with your brand.'
+    title: 'Security And Confidentiality',
+    content: 'NDA before brief. Assets live in access controlled storage, and unreleased product work is quarantined from public showreels until you clear it.'
   },
   {
     id: 5,
-    title: '5 Animation',
-    content: 'We bring everything to life with smooth, engaging motion.'
-  },
-  {
-    id: 6,
-    title: '6 Delivery & Revisions',
-    content: 'We refine, finalize, and deliver a polished end product.'
+    title: 'Tools And Pipeline',
+    content: 'Maya, Blender, Cinema 4D, Houdini, Substance, Unreal Engine and Nuke, running into a managed render farm. Your files stay in formats your future teams can actually open.'
   }
 ];
 
@@ -58,10 +53,10 @@ const HowWeWorkSection = () => {
             >
               <h2 className={styles.heading}>How We Work</h2>
               <p className={styles.description}>
-                We keep the process simple, fast, and focused on results. From the first conversation to final delivery, every step is designed to ensure clarity, speed, and high-quality output without unnecessary delays or confusion.
+                We will always search for the best way to give our clients a great experience. We will continue to learn about every industry we enter so we can offer innovative work at a standard that holds up under a full screen review.
               </p>
               <div className={styles.buttonsWrapper}>
-                <CTAButton type="button" text="Let's Talk" />
+                <CTAButton type="chat" text="Let Us Talk" />
                 <CTAButton type="link" href="tel:+1-443-487-0213" text="Call Now" variant="outline" />
               </div>
             </motion.div>

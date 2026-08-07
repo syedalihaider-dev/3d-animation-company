@@ -18,7 +18,7 @@ const Footer = () => {
     // { name: 'PRESS RELEASE', path: '/press-release' },
     // { name: 'LOCATION', path: '/location' },
     // { name: 'INDUSTRIES', path: '/industries' },
-    { name: 'OUR WORK', path: '/our-work' },
+    { name: 'OUR WORK', path: '/portfolio' },
     { name: 'CONTACT US', path: '/contact-us' },
   ];
 

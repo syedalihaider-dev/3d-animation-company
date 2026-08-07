@@ -96,6 +96,19 @@ const services = [
   }
 ];
 
+const homepageServices = [
+  ["3D Product Animation", "Show the inside of your product without a single teardown. Exploded views, material accuracy and camera work engineered to make buyers understand value in seconds."],
+  ["3D Character Animation", "Rigged, believable characters with weight, timing and personality. Ideal for brand mascots, series content and story driven campaigns."],
+  ["3D Architectural Visualisation", "Photoreal exteriors, interiors and flythroughs that let buyers walk a building years before the concrete cures."],
+  ["3D Medical Animation", "Mechanism of action films, device demonstrations and surgical sequences reviewed against clinical references before render."],
+  ["3D Explainer Videos", "Complex offers turned into ninety seconds of clarity. Script, storyboard, animation and voice over handled in house."],
+  ["3D Motion Graphics", "Data, UI and abstract concepts brought into three dimensions with kinetic type and depth that flat design cannot reach."],
+  ["3D Logo Animation", "A signature open and close for every asset your brand ships. Built once, exported for every aspect ratio you run."],
+  ["CGI And VFX", "Live footage extended with computer generated environments, simulations and compositing that survives a full screen view."],
+  ["3D Game Art And Cinematics", "Real time assets, environments and trailer cinematics produced for Unreal and Unity pipelines."],
+  ["AI Assisted 3D Animation", "Machine assisted previsualisation and iteration that shortens revision cycles while artists keep creative control."],
+];
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -127,8 +140,8 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="subtitle">WHAT WE DO</p>
-          <h2 className={styles.title}>Explore the Full Range of Pixel Studio Animation Services</h2>
-          <p className={styles.description}>Product demos, explainer videos, character animation, CGI or game animation, our animation services cover everything from 2D to 3D video animation services</p>
+          <h2 className={styles.title}>Our 3D Animation Services</h2>
+          <p className={styles.description}>Ten disciplines under one roof. Whether you need a single hero film or a full quarter of 3D animation content, you brief one team and one producer stays accountable from the first sketch to the final render.</p>
         </motion.div>
 
         {/* Grid */}
@@ -139,7 +152,9 @@ const ServicesSection = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.05 }}
         >
-          {services.map((service, idx) => (
+          {homepageServices.map(([title, desc], idx) => {
+            const service = services[idx];
+            return (
             <div key={idx} className="col-lg-4 col-md-6">
               <motion.div variants={itemVariants} className={styles.card}>
                 <div className={styles.videoWrapper}>
@@ -155,15 +170,15 @@ const ServicesSection = () => {
                   <div className={styles.iconWrapper}>
                     <Image
                       src={service.icon}
-                      alt={service.title}
+                      alt={title}
                       width={60}
                       height={60}
                     />
                   </div>
                   <div className={styles.textWrapper}>
-                    <h3 className={styles.cardTitle}>{service.title}</h3>
+                    <h3 className={styles.cardTitle}>{title}</h3>
                     <p className={`${styles.cardDesc} scroll_block`}>
-                      {service.desc}
+                      {desc}
                     </p>
                   </div>
                   <Link href={`/services/${service.id}`} className={styles.arrowBtn}>
@@ -172,7 +187,8 @@ const ServicesSection = () => {
                 </div>
               </motion.div>
             </div>
-          ))}
+            );
+          })}
 
           {/* CTA Box */}
           <div className="col-lg-8 col-md-12">
@@ -186,8 +202,8 @@ const ServicesSection = () => {
                   className={styles.calender}
                 />
                 <div className={styles.ctaText}>
-                  <p className={styles.ctaSubtitle}>Picking an animation company feels riskier?</p>
-                  <h3 className={styles.ctaTitle}>Trusted Animation Company for 2D & 3D Animation Services That Fit Your Brand & Your Goals</h3>
+                  <p className={styles.ctaSubtitle}>Ready to create?</p>
+                  <h3 className={styles.ctaTitle}>Let us build something worth pausing for.</h3>
                   <div>
                     <CTAButton
                       type="popup"

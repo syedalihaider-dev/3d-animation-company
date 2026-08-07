@@ -368,7 +368,7 @@ function PortfolioCard({ item, onClick }) {
   );
 }
 
-export default function PortfolioShowcase() {
+export default function PortfolioShowcase({ category, showFilters = true }) {
   const [activeTab, setActiveTab] = useState("VIEW ALL");
   const [hoveredTab, setHoveredTab] = useState(null);
   const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
@@ -380,15 +380,16 @@ export default function PortfolioShowcase() {
 
   // Filter items based on active tab
   const filteredItems = useMemo(() => {
+    if (category) return portfolioItems.filter((item) => item.category === category);
     if (activeTab === "VIEW ALL") return portfolioItems;
     return portfolioItems.filter(item => item.category === activeTab);
-  }, [activeTab]);
+  }, [activeTab, category]);
 
   const visibleItems = useMemo(() => {
-    return filteredItems.slice(0, visibleCount);
-  }, [filteredItems, visibleCount]);
+    return category ? filteredItems : filteredItems.slice(0, visibleCount);
+  }, [category, filteredItems, visibleCount]);
 
-  const hasMoreItems = visibleCount < filteredItems.length;
+  const hasMoreItems = !category && visibleCount < filteredItems.length;
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -419,7 +420,7 @@ export default function PortfolioShowcase() {
   }, [currentVideo]);
 
   return (
-    <section className={styles.portfolioShowcase}>
+    <section id="portfolio" className={styles.portfolioShowcase}>
       <div className="container">
         <motion.h2
           className={styles.heading}
@@ -428,10 +429,11 @@ export default function PortfolioShowcase() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          OUR LATEST PROJECTS
+          Our Latest 3D Animation Projects
         </motion.h2>
 
         {/* Tabs Section */}
+        {showFilters && (
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -503,6 +505,7 @@ export default function PortfolioShowcase() {
             <Image src="/icons/slider-arrow.png" alt="Next" width={10} height={15} />
           </button>
         </motion.div>
+        )}
 
         {/* Grid Section */}
         <motion.div layout className={`row ${styles.grid}`}>

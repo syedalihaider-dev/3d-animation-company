@@ -1,53 +1,43 @@
 import Banner from "@/components/Common/Banner/Banner";
-import StatsSection from "@/components/OurWork/StatsSection";
+import StatsSection from "@/components/Home/StatsSection";
 import GetQuoteSection from "@/components/Common/GetQuoteSection";
-import TestimonialsSlider from "@/components/OurWork/TestimonialsSlider";
-import TrustedClientsSection from "@/components/OurWork/TrustedClientsSection";
-import IndustrySection from "@/components/OurWork/IndustrySection";
+import TrustedClientsSection from "@/components/Home/TrustedClientsSection";
+import IndustrySection from "@/components/Home/IndustrySection";
 import GreatVideosSection from "@/components/OurWork/GreatVideosSection";
-import TestimonialSection from "@/components/Common/TestimonialSection";
+import TestimonialSection from "@/components/Home/TestimonialSection";
 import PortfolioShowcase from "@/components/OurWork/PortfolioShowcase";
-import FaqSection from "@/components/OurWork/FaqSection";
 
-
-const bannerSlides = [
-  {
-    title: "Professional Video Animation Company - High Impact Animation Services",
-    description: "Why do so many brands invest in animation and see almost no return? Because most animation studios are hired to make something that looks good, and looking good is not a business outcome. Your competitors have slick videos too. The ones winning with video are the ones whose content was built around what their audience actually needed to understand to take the next step. That is the gap 3D Animation Company. was built to close. Our premium animation services include 2D explainers, 3D immersive visualizations, whiteboard animations, and motion graphics designed to convert attention into action."
-  },
-  {
-    title: "Your Go-To Animation Studio for Animation Services",
-    description: "At 3D Animation Company., we operate differently. We ask what the video is supposed to accomplish before we touch the timeline. We build around your funnel, your audience's psychology, and the specific moment in the customer journey where the video will live. Our animation services run the full creative and production spectrum. Concept development, scriptwriting, character design, storyboarding, full animation, voiceover direction, sound design, and final delivery."
-  },
-  {
-    title: "A Trusted Animation Company for 2D & 3D Animation Services That Fit Your Brand & Your Goals",
-    description: "Don’t worry, Our team 2D & 3D animation services in the USA always begin with a genuine discovery process. We learn about your product, your audience, your brand voice, your market positioning, and precisely what you want a viewer to think, feel, or do after watching the video."
-  }
+const quoteFeatures = [
+  { id: 1, icon: "/icons/calender-box.png", title: "Quick Response", text: "A written reply within 24 hours." },
+  { id: 2, icon: "/icons/security-box.png", title: "100% Confidential", text: "NDA signed before you share a single file." },
+  { id: 3, icon: "/icons/user-box.png", title: "Expert Consultation", text: "You speak to an animation lead, never a call centre." },
 ];
 
 export const metadata = {
-  title: "Our Work - 3D Animation Company",
-  description: "Welcome to 3D Animation Company Our Work page. We are an award-winning digital agency.",
+  title: "3D Animation Portfolio - Our 3D Animation Work",
+  description: "Browse the 3D animation portfolio of one of the best 3D animation companies. Product, character, architectural and medical 3D animation services on screen.",
 };
 
 export default function OurWork() {
   return (
     <main>
       <Banner
-        slides={bannerSlides}
+        title="Award Winning 3D Animation Studio For Global Brands"
+        description="Every film below started as a sentence somebody struggled to explain. Partner with our 3D animation company that has already solved your category, and see what excellence looks like at every step of the journey."
         video="/videos/home.webm"
         showPlayButton={true}
         showTrustBadges={true}
+        primaryCtaText="Contact Us"
+        primaryCtaType="link"
+        secondaryCtaText="Let Us Talk"
       />
       <StatsSection />
-      <PortfolioShowcase />
+      <PortfolioShowcase category="3D Animation" showFilters={false} />
       <TestimonialSection />
-      <GetQuoteSection />
-      <TestimonialsSlider />
+      <GetQuoteSection features={quoteFeatures} />
       <GreatVideosSection />
       <TrustedClientsSection />
       <IndustrySection />
-      <FaqSection />
     </main>
   );
 }

@@ -79,8 +79,8 @@ const WhyInvestSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className={styles.mainTitle}>Brands That Invest in Professional Video <br /> Animation Services Go Further</h2>
-          <p className={styles.subText}>The data on video animation in marketing is not ambiguous anymore.</p>
+          <h2 className={styles.mainTitle}>Brands That Invest In Professional 3D Animation Services Go Further</h2>
+          <p className={styles.subText}>This is what the market data says about motion, and why our clients keep the camera rolling.</p>
         </motion.div>
 
         <div className="row align-items-center mt-5">

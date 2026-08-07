@@ -37,14 +37,14 @@ const MissionSection = () => {
               className={styles.contentWrapper}
             >
               <h2 className={styles.heading}>
-                Crafting Stories Through Animation
+                Our mission is to help brands find the creative spark they need to glow on the screen.
               </h2>
               <p className={`${styles.description} scroll_block`}>
-                By combining creative storytelling with a results-driven approach, we help brands stand out, communicate clearly, and connect with their audience in a meaningful way.
+                Most companies do not have a visibility problem. They have a comprehension problem. The product is good, the engineering is sound, and the explanation collapses somewhere between the pitch deck and the buyer. That gap is the whole reason this 3D animation studio exists.
               </p>
 
               <div className={styles.buttonsWrapper}>
-                <CTAButton type="button" href="tel:+1-443-487-0213" text="Let's Talk" />
+                <CTAButton type="chat" text="Let Us Talk" />
                 <CTAButton type="link" href="tel:+1-443-487-0213" text="Call Now" variant="outline" />
               </div>
             </motion.div>

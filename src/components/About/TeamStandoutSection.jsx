@@ -7,26 +7,26 @@ import styles from './TeamStandoutSection.module.css';
 const features = [
   {
     id: 1,
-    title: 'Result-Oriented',
-    description: "We focus on outcomes, not just output. Every animation is built to drive engagement, leads, and conversions.",
+    title: 'Result Oriented',
+    description: "For us, the only real indicator of success is whether the film moved the number it was built to move. Our animation directors and producers work to the goals you set, not the awards we want. That is why quotes come with objectives attached and reviews come with performance questions.",
     icon: '/icons/result-oriented.png'
   },
   {
     id: 2,
-    title: 'Flexible',
-    description: "We adapt to your needs, timelines, and goals. Quick iterations and smooth collaboration keep projects moving forward.",
+    title: 'Deep Bench, Real Specialists',
+    description: "Modellers, riggers, lighting artists, compositors, scriptwriters and sound designers. Nobody here is a generalist pretending. It means your project moves quickly and scales up or down without a drop in craft.",
     icon: '/icons/flexible.png'
   },
   {
     id: 3,
-    title: 'Transparent',
-    description: "Clear communication at every stage of the process. No hidden steps, just honest updates and aligned expectations.",
+    title: 'Flexible And Transparent',
+    description: "Every project runs on a shared board. You see the stage, the owner and the next date at any hour of any day. Our clients control every decision that matters and none of the admin that does not.",
     icon: '/icons/transparent.png'
   },
   {
     id: 4,
-    title: 'Experienced',
-    description: "A team with proven expertise across multiple industries. We know what works and how to make your content stand out.",
+    title: 'Craft Held To A Standard',
+    description: "Nothing leaves this studio without a technical pass and a creative pass. Scale, topology, lighting continuity and colour are checked against the reference before a single frame reaches your inbox.",
     icon: '/icons/experienced.png'
   }
 ];
@@ -52,9 +52,12 @@ const TeamStandoutSection = () => {
           viewport={{ once: true, margin: "-50px" }}
         >
           <p className="subtitle">What Makes</p>
-          <h2 className={styles.mainHeading}>Pixel Studio Different?</h2>
-          <p className={styles.headerDesc}>
+          <h2 className={styles.mainHeading}>Our 3D Animation Team Stand Out</h2>
+          <p className={styles.headerDesc} aria-hidden="true" style={{ display: 'none' }}>
             Every project is tailored to your brand and your goals, with a sharp focus on results. If it doesn’t engage, convert, or make an impact, it doesn’t leave our studio.
+          </p>
+          <p className={styles.headerDesc}>
+            A full cycle 3D animation agency means we own the entire pipeline, from the first concept sketch to the day the file goes live on your platform.
           </p>
         </motion.div>
 

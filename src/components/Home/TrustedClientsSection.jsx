@@ -22,8 +22,8 @@ const allClients = [
 export default function TrustedClientsSection() {
   return (
     <GlobalTrustedClientsSection
-      heading="CLIENTS"
-      text="Our animation services have earned the trust of leading global brands, delivering impactful results that drive success worldwide."
+      heading="Brands That Work With Us"
+      text="Our 3D animation services have earned the trust of global brands and the ambitious challengers hunting them."
       clients={allClients}
       variant="dark"
     />

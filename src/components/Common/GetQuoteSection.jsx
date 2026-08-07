@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from "./GetQuoteSection.module.css";
 import Image from "next/image";
 import CTAButton from "../Common/CTAButton";
-const features = [
+const defaultFeatures = [
   {
     id: 1,
     icon: "/icons/user-box.png",
@@ -26,7 +26,7 @@ const features = [
   }
 ];
 
-export default function GetQuoteSection() {
+export default function GetQuoteSection({ features = defaultFeatures }) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -80,7 +80,7 @@ export default function GetQuoteSection() {
             {/* Left Column */}
             <motion.div className={styles.leftCol} variants={itemVariants}>
               <h2 className={styles.heading}>
-                Book a Meeting with a member and make it your Successful Project.
+                Book a call with a 3D animation specialist and get a cost quote today.
               </h2>
 
               <div className={styles.featureList}>
@@ -105,7 +105,7 @@ export default function GetQuoteSection() {
             {/* Right Column (Form) */}
             <motion.div className={styles.rightCol} variants={itemVariants}>
               <div className={styles.formBox}>
-                <h3 className={styles.formTitle}>GET QUOTE</h3>
+                <h3 className={styles.formTitle}>Get Quote</h3>
 
                 <form
                   onSubmit={(e) => {

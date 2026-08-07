@@ -3,17 +3,17 @@ import ContactFormSection from "@/components/Contact/ContactFormSection";
 import { Metadata } from "next";
 
 export const metadata = {
-  title: "3D Animation Company - Contact Us",
-  description: "Connect with 3D Animation Company., a leading animation studio. Reach out to our team for project inquiries, collaborations, or any questions regarding our 2D and 3D animation services. Let’s bring your ideas to life together.",
-  keywords: "Contact 3D Animation Company, Best Animation Studio In India, 2D Animation Studio, 3D Animation Studio, Explainer Videos, Whiteboard Animation, Motion Graphics, Character Animation",
+  title: "Contact Us - Get A 3D Animation Quote In 24 Hours",
+  description: "Talk to a 3D animation specialist. Send your brief and get a cost quote within 24 hours from a professional 3D animation studio serving clients globally.",
+  keywords: "",
 }
 
 export default function ContactUsPage() {
   return (
     <main>
       <Banner
-        title="Contact 3D Animation Company"
-        description="We’ll understand your idea, walk you through the process, and show you exactly how we can bring it to life. No long forms, no back and forth just a quick conversation to get things moving. "
+        title="Let Us Bring Your Idea Into Three Dimensions"
+        description="Ready to start? Whether you want a cost quote, a second opinion on a script, or just a straight answer about whether 3D is right for your project, there is an animation lead on the other side of this form."
         video="/videos/home.webm"
         showPlayButton={true}
       />

@@ -17,6 +17,10 @@ const Banner = ({
   showTrustBadges = false,
   showPlayButton = false,
   breadcrumbs = null,
+  primaryCtaText = 'Get a Quote',
+  primaryCtaType = 'popup',
+  secondaryCtaText = "Let's Talk",
+  secondaryCtaType = 'chat',
 }) => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false);
@@ -172,12 +176,12 @@ const Banner = ({
 
               <div className={`${styles.actionRow} ${centered ? 'justify-content-center mt-5' : ''} banner-reveal`}>
                 <CTAButton
-                  type="popup"
-                  text="Get a Quote"
+                  type={primaryCtaType}
+                  text={primaryCtaText}
                 />
                 <CTAButton
-                  type="chat"
-                  text="Let's Talk"
+                  type={secondaryCtaType}
+                  text={secondaryCtaText}
                   variant="outline"
                 />
               </div>

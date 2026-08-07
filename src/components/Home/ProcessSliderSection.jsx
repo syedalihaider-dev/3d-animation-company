@@ -11,29 +11,36 @@ const slides = [
     id: 1,
     image: "/discover-and-plan.png",
     step: "1",
-    title: "Discover and Plan",
-    text: "We begin with a structured discovery session, not a sales call. We ask about your audience, your product, your competitors, your brand voice, your distribution channels, and exactly what you want a viewer to do after watching the video. We gather every brand asset you have, study what is already in your category, and write a creative brief that is specific enough to guide production decisions. Before a single sketch gets made, everyone on both sides of the project has signed off on what we are building and why."
+    title: "Discovery And Script",
+    text: "We interrogate the offer, the audience and the objection. The script is signed off before anything moves."
   },
   {
     id: 2,
     image: "/discover-and-plan.png",
     step: "2",
-    title: "Script and Design",
-    text: "Our scriptwriters develop a draft built around the creative brief, the audience psychology identified in discovery, and a clear call to action embedded in the narrative structure.  Simultaneously, our visual design team begins developing the creative direction: character concepts, background style, color palette, typography, and motion treatment. You review style frames and a full storyboard before any animation begins. Approving the storyboard is the most consequential decision in the production process because changes made here cost almost nothing."
+    title: "Storyboard And Style Frames",
+    text: "You see the film as stills, with the exact art direction, camera language and pacing you will get."
   },
   {
     id: 3,
     image: "/discover-and-plan.png",
     step: "3",
-    title: "Animation and Production",
-    text: "With script and storyboard approved, the full production team engages. Voiceover recording, character animation, background rendering, motion graphics, and sound design all run in parallel across specialized team members. Your project manager tracks every milestone and provides progress updates at intervals agreed at kickoff. You never have to send a 'checking in' email because the update arrives before you think to ask."
+    title: "Modelling, Texturing And Rigging",
+    text: "Geometry is built to real world scale and surfaced with materials that behave the way physics expects."
   },
   {
     id: 4,
     image: "/discover-and-plan.png",
     step: "4",
-    title: "Refine, Deliver, and Review",
-    text: "The first full draft arrives for your structured revision round. Our project manager documents your feedback, confirms the interpretation of each note before any changes are made, and returns a revised version that addresses every point. We do not guess at what 'make it more dynamic' means. We ask, confirm, and act. Final delivery includes the video in every format and resolution your team needs, for every platform the content will live on."
+    title: "Animation, Lighting And Rendering",
+    text: "Cameras, timing and light are set, then the sequence is rendered at full resolution on our render farm."
+  },
+  {
+    id: 5,
+    image: "/discover-and-plan.png",
+    step: "5",
+    title: "Sound, Compositing And Delivery",
+    text: "Voice over, score and effects are mixed, the film is graded, and you receive every format your channels need."
   }
 ];
 
@@ -104,9 +111,9 @@ export default function ProcessSliderSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          How a Video Animation Gets Built at 3D Animation Company, From Brief to Final Frame
+          How A 3D Animation Gets Built At 3D Animation Company, From Brief To Final Frame
         </motion.h2>
-        <p className={styles.description}>Every studio describes its process as smooth. Here is ours in detail so you can judge it yourself.</p>
+        <p className={styles.description}>From brief to final frame, every stage is agreed before the next one starts.</p>
 
         <div className={styles.sliderContainer} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <div style={{ position: "relative", width: "100%", overflow: "hidden" }}>
@@ -139,7 +146,7 @@ export default function ProcessSliderSection() {
                   <p className={`${styles.slideText} scroll_block`}>{slides[activeIndex].text}</p>
 
                   <div className={styles.btnGroup}>
-                    <CTAButton text="Learn More" variant="filled" />
+                    <CTAButton text="Connect With Us" variant="filled" />
                     <CTAButton text="Let's Talk" variant="outline" className={styles.btn} />
                   </div>
                 </div>

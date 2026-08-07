@@ -10,7 +10,8 @@ export default function IndustrySection({
   heading = "The Industries We Serve and the Standards Each One Demands",
   description = "A healthcare animated explainer, a SaaS onboarding video, and a legal demonstrative animation are not the same project with different subject matter. We have built genuine expertise across the industries listed here, which means we understand those differences from the first discovery call.",
   industries = [],
-  variant = "default"
+  variant = "default",
+  hideDetails = false,
 }) {
   const sliderRef = useRef(null);
 
@@ -68,7 +69,7 @@ export default function IndustrySection({
               <Image src={industry.image} alt={industry.title} className={styles.cardImg} width={500} height={500} />
               <div className={styles.cardOverlay}>
                 <h3 className={styles.cardTitle}>{industry.title}</h3>
-                <div className={styles.cardContent}>
+                {!hideDetails && <div className={styles.cardContent}>
                   <p className={`${styles.cardText} scroll_block`}>{industry.text}</p>
                   <CTAButton
                     text="Read More"
@@ -76,7 +77,7 @@ export default function IndustrySection({
                     href={industry.link}
                     type="link"
                   />
-                </div>
+                </div>}
               </div>
             </div>
           ))}
