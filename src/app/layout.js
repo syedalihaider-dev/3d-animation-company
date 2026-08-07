@@ -23,6 +23,9 @@ export const metadata = {
     index: false,
     follow: false,
   },
+  verification: {
+    google: "kdjDZPVMKUUfm3R6KLFAz5GmXLBX2xSPaokpF6YzdF0",
+  },
 };
 
 import Script from "next/script";
@@ -34,11 +37,41 @@ export default function RootLayout({ children }) {
         <CanonicalLink />
       </head>
       <body>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KKLN5GJS"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Header />
         {children}
         <Footer />
         <GlobalPopup />
 
+        <Script
+          id="google-gtag-loader"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XL99K59785"
+          strategy="beforeInteractive"
+        />
+        <Script id="google-gtag-config" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XL99K59785');
+          `}
+        </Script>
+        <Script id="google-tag-manager" strategy="beforeInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KKLN5GJS');
+          `}
+        </Script>
         <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=e3f979f5-27f6-46fa-8a12-378d2c7089aa" strategy="afterInteractive" />
         <Script id="zopim-init" strategy="afterInteractive">
           {`
