@@ -193,7 +193,7 @@ const ContactFormSection = () => {
               </div>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className={styles.videoBox} onClick={() => setModalOpen(true)}>
+            {/* <motion.div variants={fadeInUp} className={styles.videoBox} onClick={() => setModalOpen(true)}>
               <Image
                 src="/contact-video-thumbnail.png"
                 alt="Video Thumbnail"
@@ -202,7 +202,7 @@ const ContactFormSection = () => {
                 className={styles.thumbnailImg}
               />
               <div className={styles.playBtn}></div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
         </div>
