@@ -11,6 +11,9 @@ import FaqSection from "@/components/CaseStudy/Healthcare/FaqSection";
 export const metadata = {
   title: "Healthcare Case Study - 3D Animation Company",
   description: "Case study for Prolific Studio | N-Seam Saver",
+  alternates: {
+    canonical: "https://www.pixelstudiosinc.com/case-study/healthcare",
+  },
 };
 
 export default function HealthcarePage() {

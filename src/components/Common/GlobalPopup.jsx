@@ -158,7 +158,6 @@ const GlobalPopup = () => {
                     <textarea
                       name="description"
                       placeholder="To help us understand better, enter a brief description of your project."
-                      required
                       value={formData.description}
                       onChange={handleChange}
                       className={styles.textarea}

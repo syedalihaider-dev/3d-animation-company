@@ -11,6 +11,9 @@ import FaqSection from "@/components/About/FaqSection";
 export const metadata = {
   title: "About Us | Inside Our Professional 3D Animation Studio",
   description: "Get to know about the Mission & Vision behind 3D Animation Company. A professional 3D animation studio of animators and directors delivering services in the USA.",
+  alternates: {
+    canonical: "https://www.pixelstudiosinc.com/about-us",
+  },
 };
 
 export default function AboutUs() {

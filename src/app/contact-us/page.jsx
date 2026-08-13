@@ -6,6 +6,9 @@ export const metadata = {
   title: "Contact Us - Get A 3D Animation Quote In 24 Hours",
   description: "Talk to a 3D animation specialist. Send your brief and get a cost quote within 24 hours from a professional 3D animation studio serving clients globally.",
   keywords: "",
+  alternates: {
+    canonical: "https://www.pixelstudiosinc.com/contact-us",
+  },
 }
 
 export default function ContactUsPage() {

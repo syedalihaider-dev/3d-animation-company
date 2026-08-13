@@ -16,6 +16,9 @@ import FaqSection from "@/components/Animation2D/FaqSection";
 export const metadata = {
   title: "Creative 2D Animation Services in the USA | 3D Animation Company.",
   description: "Looking for high-quality 2D animations services for your business? 3D Animation Company offers comprehensive 2D animation production services at a competitive price.",
+  alternates: {
+    canonical: "https://www.pixelstudiosinc.com/2d-animation-services",
+  },
 };
 
 export default function TwoDAnimation() {

@@ -5,6 +5,9 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Privacy Policy - 3D Animation Company",
   description: "Privacy Policy for 3D Animation Company. Learn how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: "https://www.pixelstudiosinc.com/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {

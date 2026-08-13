@@ -17,11 +17,12 @@ const lexend = Lexend({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.pixelstudiosinc.com'),
   title: "3D Animation Company",
   description: "Award-Winning Digital Agency",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   verification: {
     google: "kdjDZPVMKUUfm3R6KLFAz5GmXLBX2xSPaokpF6YzdF0",

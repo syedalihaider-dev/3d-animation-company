@@ -32,6 +32,9 @@ const bannerSlides = [
 export const metadata = {
   title: "3D Animation Company | Professional 3D Animation Services",
   description: "3D Animation Company is a professional 3D animation studio delivering product, character, medical and architectural 3D animation services for global brands. Get a free quote.",
+  alternates: {
+    canonical: "https://www.pixelstudiosinc.com",
+  },
 };
 
 export default function Home() {
