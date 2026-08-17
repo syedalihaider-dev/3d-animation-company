@@ -11,8 +11,8 @@ export const brandInfo = {
     display: "41 Madison Ave, New York, NY 10010, USA"
   },
   socials: {
-    linkedin: "https://www.linkedin.com/company/pixel-studios-global/",
-    facebook: "https://www.facebook.com/pixelstudiosglobal",
-    instagram: "https://www.instagram.com/pixelstudiosglobal/"
+    linkedin: "https://www.linkedin.com/company/",
+    facebook: "https://www.facebook.com/",
+    instagram: "https://www.instagram.com/"
   }
 };

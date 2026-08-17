@@ -134,7 +134,7 @@ export default function GetQuoteSection({ features = defaultFeatures }) {
                   <div className={styles.checkboxGroup}>
                     <input type="checkbox" id="terms" className={styles.checkbox} required />
                     <label htmlFor="terms" className={styles.checkboxText}>
-                      I agree to be contacted by Pixel Studio regarding my project and service requirements.
+                      I agree to be contacted by 3D Animation  regarding my project and service requirements.
                     </label>
                   </div>
 

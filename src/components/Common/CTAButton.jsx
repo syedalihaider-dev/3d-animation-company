@@ -11,7 +11,7 @@ const CTAButton = ({ type = 'link', variant = 'filled', text, href = '#', onClic
   let finalHref = href;
   if (href && (href.startsWith('tel:') || href.includes('443-487-0213'))) {
     finalHref = brandInfo.phone.href;
-  } else if (href && (href.startsWith('mailto:') || href.includes('info@pixelstudiosinc.com'))) {
+  } else if (href && (href.startsWith('mailto:') || href.includes('info@3danimationcompany.com'))) {
     finalHref = brandInfo.email.href;
   }
 

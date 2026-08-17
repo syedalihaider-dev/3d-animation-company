@@ -6,7 +6,7 @@ export const metadata = {
   title: "Terms and Conditions - 3D Animation Company",
   description: "Terms and Conditions for 3D Animation Company. Read the rules and regulations governing the use of our services.",
   alternates: {
-    canonical: "https://www.pixelstudiosinc.com/terms-and-conditions",
+    canonical: "https://www.3danimationcompany.com/terms-and-conditions",
   },
 };
 

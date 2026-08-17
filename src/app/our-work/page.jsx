@@ -17,7 +17,7 @@ export const metadata = {
   title: "3D Animation Portfolio - Our 3D Animation Work",
   description: "Browse the 3D animation portfolio of one of the best 3D animation companies. Product, character, architectural and medical 3D animation services on screen.",
   alternates: {
-    canonical: "https://www.pixelstudiosinc.com/our-work",
+    canonical: "https://www.3danimationcompany.com/our-work",
   },
 };
 

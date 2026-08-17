@@ -12,7 +12,7 @@ export const metadata = {
   title: "Healthcare Case Study - 3D Animation Company",
   description: "Case study for Prolific Studio | N-Seam Saver",
   alternates: {
-    canonical: "https://www.pixelstudiosinc.com/case-study/healthcare",
+    canonical: "https://www.3danimationcompany.com/case-study/healthcare",
   },
 };
 

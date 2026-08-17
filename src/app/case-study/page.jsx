@@ -10,7 +10,7 @@ export const metadata = {
   description: "We at 3D Animation Company. take immense pride in our comprehensive case studies that highlight our successful projects across diverse industries. Each case study is a testament to our team’s creativity, technical expertise, and dedication to delivering exceptional results for our clients.",
   keywords: "Best Animation Studio In India, 2D Animation Studio, 3D Animation Studio, Explainer Videos, Whiteboard Animation, Motion Graphics, Character Animation",
   alternates: {
-    canonical: "https://www.pixelstudiosinc.com/case-study",
+    canonical: "https://www.3danimationcompany.com/case-study",
   },
 }
 

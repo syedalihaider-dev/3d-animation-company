@@ -17,7 +17,7 @@ const lexend = Lexend({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://www.pixelstudiosinc.com'),
+  metadataBase: new URL('https://www.3danimationcompany.com'),
   title: "3D Animation Company",
   description: "Award-Winning Digital Agency",
   robots: {
